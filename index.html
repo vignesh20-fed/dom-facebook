@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+         <title>Facebook</title>
+		    <link rel="stylesheet" href="css/font-awesome.min.css">
+		 <style>
+		 *{
+		    padding:0;
+			margin:0;
+			box-sizing:border-box;
+			    font-family: Helvetica, Arial, sans-serif;
+		 }
+		 h1{
+		 text-align:center;
+		 color:#1877f2;
+		 font-size:60px;	
+         padding:20px;		 
+		 }
+		 .container{
+		    width:90%   
+			margin:0 auto;
+		 }
+		 .row{
+		     display:flex;
+		     justify-content:center;
+			 align-items:center;
+		 }
+		 .col{
+		   width:33.3%;
+		 }
+	     .facecontent{
+		   box-shadow:0 0 30px #ccc;
+		   background:white;
+		 }
+		 .facehead{
+		    border-bottom:1px solid #ccc;
+			text-align:center;
+			padding:20px;
+			}
+			
+		 .facehead h3{
+		    color:gray;
+			font-weight:400;
+			font-size:16px;
+		 }	
+		 .col1{
+		    width:50%;
+		 }
+		 
+		 #inputcontent{
+		 padding:10px;
+		 }
+		 .inputrow{
+		   display:flex
+		 }
+		  .inputrow input{
+		  width:100%;
+		  padding:12px;
+		  border-radius:5px;
+		  border:1px solid #ccc;
+		  margin-top:10px;
+		  }
+		  .mail input{
+		    width:100%;
+			padding:12px;
+		  border-radius:5px;
+		  border:1px solid #ccc;
+		  margin:20px 0;
+		  }
+          .password input{
+		   width:100%;
+		   padding:12px;
+		  border-radius:5px;
+		  border:1px solid #ccc;
+		  }
+
+		  .date h4{
+		     font-size:14px;
+			 font-weight:330;
+		  }
+		  .date input{
+		  width:100%;
+		  padding:12px;
+		  }
+		  #gender{
+		  display:flex;
+		  justify-content:space-between;
+		  }
+		  .shadow{
+		  background:white;
+		  padding:10px 30px;
+		  border:1px solid #ccc;
+          border-radius:5px;
+		  }
+		
+		  .gen{
+		  padding:10px;
+		  font-weight:300;
+		  font-size:14px;
+		  }
+		  .para{
+		  padding:10px;
+		  font-size:12px;
+		  }
+		  .para a {
+		  text-decoration:none;
+		  }
+		  .sign{
+		    text-align:center;
+			padding:10px;
+		  }
+		  .btn{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	background-color:#00a400;
+	padding:12px 60px;
+	text-align:center;
+	border:none;
+	border-radius:5px;
+	font-weight:600;
+	font-size:16px;
+	}
+    	.link{
+		 text-align:center;
+		 padding:12px;
+		}	
+	.link a{
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+	}
+		 </style>
+		 
+		 
+</head>
+<body>
+<div class="container">
+<h1>facebook</h1>
+<div class="row">
+
+<div class="col">
+     <div class="facecontent">
+           <div class="facehead">
+                  <h2>Create a new account</h2>
+                   <h3>it's quick and easy</h3>
+            </div>
+   
+	 
+	 <form id="inputcontent">
+	 <div class="inputrow">
+	 <div class="col1">
+	    <input type="text" placeholder="First name"   id="NAME">
+	 </div>
+	 <div class="col1">
+	    <input type="text" placeholder="Last name"  id="LNAME" >
+	 </div>
+	 </div>
+	 <div class="mail">
+	    	<input type="text" placeholder="Mobile number Or Phone number" id="MAIL" >
+	 </div>
+	 <div class="password">
+	   <input type="password" placeholder="New Password" id="PASS">
+	 </div>
+	 
+	  
+	     <h4 class="gen">Date Of birth <i class="fa fa-question-circle" aria-hidden="true"></i></h4>
+	   <div class="date"> 
+	  <input type="date" id="dob">
+	  </div>
+	  
+	    <h4 class="gen">Gender <i class="fa fa-question-circle" aria-hidden="true"></i></h4>
+	    <div id="gender">
+		<div class="shadow">
+		<label for="gen">Female</label>
+	   	<input type="radio" id="gen" name="gen" >   
+		</div>
+		<div class="shadow">
+		<label for="gen1">Male</label>
+	  <input type="radio" id="gen1" name="gen">         
+		</div>
+		<div class="shadow">
+		<label for="gen2">Custom</label>
+		   <input type="radio" id="gen2"  name="gen">     
+		</div>
+	  </div>
+	   <div class="para">
+	  <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.</p>
+	  <p>By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy and Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+	  </div>
+	   
+	   <div class="sign">
+	  <button class="btn" id="btn">Sign Up</button>
+	  </div>
+	  </form>
+      	<div id="result"></div>
+         <div class="link">
+	   <a href="link/index.html">Already have an Account?</a>
+	  </div>
+      
+	 </div>
+	  
+	  
+	 
+</div>
+      
+</div>
+</div>
+<script src="main.js">
+</script>
+</body>
